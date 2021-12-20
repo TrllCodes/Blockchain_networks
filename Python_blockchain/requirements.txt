@@ -1,0 +1,9 @@
+pytest==6.2.5
+Flask==2.0.2
+pubnub==5.4.0
+requests==2.26.0
+cryptography==36.0.0
+Flask-Cors==3.0.10
+react-router==5.0.1
+react-router-dom==5.0.1
+history==4.9.0
