@@ -1,0 +1,72 @@
+The Ethereum-inspired algorithm:
+1. Calculate a block target hash based on the last block in the chain's
+difficulty value. Depending on that difficulty value, this target hash can be
+smaller or larger. The higher the difficulty, the smaller the target hash's
+value. The lower the difficulty, the larger the target hash value. Hashes are
+in hexadecimal format.
+
+2. Try and find an "underTargetHash" lower than the block target hash. Which is
+to say, try and find a hash, based on the current block in the chain, that is
+less than the calculated block target hash.
+
+- The "underTargetHash" consists of:
+  - a new timestamp for the block
+  - a new number for the next block in the chain, which is the number of the
+  last block + 1.
+  - the new beneficiary value
+  - the new difficulty value, which is based on the difference in time between
+  the last block's timestamp and the new block's timestamp.
+  - the nonce allows miners to have infinite retries at generating a new
+  "underTargetHash".
+
+What are RSA & SHA-256?
+
+RSA- named after it's creators: Rivest, Shamir & Adleman
+- it is a method for obtaining digital signatures and public-key cryptosystems.
+- Based on "trap-door one-way function" using Prime number factorization.
+- It can be used to create/generate both a private key and a public key.
+- The private key is known as the signature, the public key is known as the
+encryption.
+
+SHA-256 stands for Secure Hash Algorithm w/ 256-bit digest
+- It is based on multiple boolean operations
+- It is collision resistant, meaning that it's impossible to generate the same
+hash twice if even a character of the original data is altered.
+- It is also irreversible, meaning that someone cannot decrypt the hash to
+decipher the original data.
+
+Types of transactions we will cover:
+1. Transfer transactions - one user sends currency to another user.
+2. Exchange transactions - an exchange of a fiat currency for the currency
+native to the blockchain.
+3. Stake transactions - Required for the Proof Of Stake Algorithm, which has
+token "forgers" instead of miners. The stake can be likened to a pile of coins,
+whoever has the most coins in their pile (or tokens that they contribute), will
+have the best chance of being the next block forger in the blockchain. The
+chance of being the next forger is essentially proportional to how many tokens
+one potential forger has staked vs. how many tokens every other potential forger
+has staked.
+
+Smartchain opCodes:
+Mathematics -
+STOP: Stops the program code.
+ADD: Addition, sums the values in the stack array.
+SUB: Subtraction, subtracts the values in the stack array.
+MUL: Multiplication, mulitplies the values in the stack array.
+DIV: Division, divides the valuesin the stack array.
+PUSH: Push, pushes the subsequent value in the code array into the stack array.
+
+Comparisons -
+LT: Less than <
+GT: Greater than >
+EQ: Equal to ==
+AND: and operation
+OR: or operation
+
+
+"describe(name, fn)": {
+    "descriptionMoreURL": "https://facebook.github.io/jest/docs/api.html#describename-fn",
+    "prefix": "desc",
+    "leftLabelHTML": "<span style='color:#99424f'>Jest</span>",
+    "body": "describe(\"$1\", () => {\n  $2\n});"
+  },

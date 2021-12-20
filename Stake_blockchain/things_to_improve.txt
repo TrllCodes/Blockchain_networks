@@ -1,0 +1,5 @@
+Create my own in-house Pub/Sub or p2p networking system
+
+The sortCharacters function could be a potential achilles heel
+
+Use EdDSA ('ed25519') encryption for the network instead of 'secp256k1'

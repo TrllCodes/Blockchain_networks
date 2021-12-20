@@ -1,0 +1,34 @@
+{
+  "name": "Stake_blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api-test": "node ./api-test",
+    "dev": "nodemon ./api",
+    "dev-peer": "nodemon ./api --peer",
+    "start": "node ./api",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.1",
+    "jest": "^27.4.3",
+    "js-sha3": "^0.8.0",
+    "lodash": "^4.17.21",
+    "pubnub": "^4.35.0",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
